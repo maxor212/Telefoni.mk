@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TehnologijaMK</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="stylesheet" href="najavi.css" />
   </head>
   <body>
     <nav class="nav">
@@ -19,8 +21,11 @@
           <li><a href="#">Контакт</a></li>
           <li><a href="#">Категорија</a></li>
         </ul>
+        <button class="najavi">Sign Up</button>
+        <button class="login-btn">Login</button>
       </div>
     </nav>
+
     <div class="img"></div>
     <div class="centar">
       <div class="title">Добре дојдовте во Технологија МК</div>
@@ -30,5 +35,31 @@
         <button class="subscribe-button">Претплати се</button>
       </div>
     </div>
+
+    <!-- Login Popup -->
+    <div class="modal" id="loginModal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Најава</h2>
+        <input type="text" placeholder="Корисничко име или Email" />
+        <input type="password" placeholder="Лозинка" />
+        <button class="login-submit">Најави се</button>
+      </div>
+    </div>
+
+    <!-- Register Popup -->
+    <div class="modal" id="registerModal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Регистрација</h2>
+        <input type="text" placeholder="Име" />
+        <input type="text" placeholder="Презиме" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Лозинка" />
+        <button class="register-submit">Регистрирај се</button>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
   </body>
 </html>
